@@ -238,16 +238,32 @@ html,body {
 }
   
 .mobile-discover::-webkit-scrollbar-track {
-    background: #eee;
+    background: transparent;
 }
   
 .mobile-discover::-webkit-scrollbar-thumb {
-    background: #CED0D4;
+    background: transparent;
     border-radius: 5rem;
     
 }
 
 
+
+.mobile-joined::-webkit-scrollbar {
+    width: 0.8rem;
+    
+    
+}
+  
+.mobile-joined::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+.mobile-joined::-webkit-scrollbar-thumb {
+    background: #E4E6EB;
+    border-radius: 5rem;
+    
+}
 
 
 
@@ -1008,6 +1024,7 @@ html,body {
     min-width: 300px;
     position: fixed;
     overflow-y: scroll;
+    scrollbar-color: transparent;
     bottom: 0;
     left: 0;
     top: 66px;
@@ -1826,6 +1843,7 @@ html,body {
         align-items: center;
         justify-content: space-between;
         overflow-x: scroll;
+        scrollbar-color: transparent;
         scrollbar-width: thin;
         flex-wrap: nowrap;
     }
@@ -1854,12 +1872,13 @@ html,body {
 
     .mobile-joined{
         margin: 10px 0;
-        padding: 0 23px;
+        padding: 7px 23px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-wrap: nowrap;
         overflow-x: scroll;
+          scrollbar-color: transparent;
     }
     .mobile-joined-card{
         position: relative;
